@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Budowanie aplikacji...'
+                echo 'Building applications...'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testowanie aplikacji...'
+                echo 'Testing Applications...'
             }
         }
         stage('Deploy') {
@@ -19,7 +19,7 @@ pipeline {
                 expression { params.DEPLOY }
             }
             steps {
-                echo 'Wdrażanie aplikacji...'
+                echo 'Implementing applications...'
             }
         }
     }
